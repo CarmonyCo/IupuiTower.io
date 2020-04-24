@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px;
+    background: #990000;
+    color: white;
+    align-items: center;
+}
+
+html{
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #000;
+    line-height: 1.6rem;
+}
+
+.name{
+    grid-column: 2;
+    text-align: center;
+    justify-content: center;
+}
+
+.pic{
+    width: 50px;
+    grid-column: 1;
+}
+
+.links{
+    grid-column: 3;
+    text-align: right;
+    word-spacing: 40px;
+    padding-right: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover {
+    color: grey;
+}
+
+.tower-pic{
+    width: 100%;
+}
+
+.L-body{
+    padding-top: 1rem;
+    margin-left: 1rem;
+}
+p{
+    text-indent: 30px;
+}
+
+
+.main-footer{
+    padding-top: 50px;
+    background: #990000;
+}

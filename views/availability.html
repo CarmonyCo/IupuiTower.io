@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Availability</title>
+    <link rel="stylesheet" href="./static/availability.css" />
+</head>
+<body>
+    <div class ="navbar">
+        <img class ="pic" src="/images/iusymbol.png" alt="IU symbol" />
+        <h2 class ="name">IUPUI Tower Laundry Room</h2>
+
+        <div class="links">
+                <a href="home">Home</a> <a href="feedback">Feedback</a>
+        </div>
+    </div>
+    <!-- navbar ends -->
+    <div class = container>
+        <div class="washer">
+            <h2>Washers</h2>
+        </div>
+
+        <div class="dryer-l">
+            <h2>Dryers</h2>
+        </div>
+
+        <div class="dryer-r">
+            <h2>Dryers</h2>
+        </div>
+            <div class="dryer-lid">
+                <div>1 2 3 4 5</div>
+                <ul class="left-time">
+%           for time in left_dryers :
+                <li>{{time}}</li>
+% end
+                </ul>
+            </div>
+
+        <div class="washer-id">
+                <div>6 7 8 9 10 11 12 13 14 15 </div>
+            <ul class="middle-time">
+%           for time in washer:
+                <li>{{time}}</li>
+
+% end
+            </ul>
+        </div>
+
+                <div class="dryer-rid">
+                <div>16 17 18 19 20</div>
+            <ul class="right-time">
+%           for time in right_dryer:
+                <li>{{time}}</li>
+
+% end
+            </ul>
+                </div>
+
+
+        <form class="machine-select" action="/available" method="POST">
+            <select id="machine" name="id">
+                <option value="">Select the Machine ID</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+
+
+            </select>
+            <select id="time" name="selectedTime">
+                <option value="">Select the amount of Time</option>
+                <option value="1"> 1 mins</option>
+                <option value="34">34 mins</option>
+                <option value="36">36 mins</option>
+                <option value="40">40 mins</option>
+                <option value="60">60 mins</option>
+
+            </select>
+        <button class="btn" type="submit">Submit</button>
+        </form>
+        <footer class="main-footer"> </footer>
+    </div>
+    <!-- end of container -->
+</body>
+</html>

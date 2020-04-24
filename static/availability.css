@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px;
+    background: #990000;
+    color: white;
+    align-items: center;
+}
+
+html{
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+.name{
+    grid-column: 2;
+    text-align: center;
+    justify-content: center;
+}
+
+.pic{
+    width: 50px;
+    grid-column: 1;
+}
+
+.links{
+    grid-column: 3;
+    text-align: right;
+    word-spacing: 40px;
+    padding-right: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover {
+    color: grey;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(11,1fr);
+    grid-auto-rows: 50px;
+}
+.washer{
+    grid-column: 6;
+    grid-row: 2;
+}
+
+.dryer-l{
+    grid-column: 9;
+    grid-row: 5;
+
+}
+
+.dryer-r{
+    grid-row: 5;
+    grid-column: 3;
+}
+
+.dryer-lid{
+    grid-row: 6;
+    grid-column: 2 / 6;
+    word-spacing: 40px;
+    padding-left: 4rem;
+}
+
+.dryer-rid{
+    grid-row: 6;
+    grid-column: 8 / 12;
+    word-spacing: 40px;
+    padding-left: 3rem;
+
+}
+
+.washer-id{
+    grid-row: 3;
+    grid-column: 4 / 11;
+    word-spacing: 40px;
+    padding-left: 5rem;
+}
+
+
+.machine-select{
+    grid-column: 4 / -1;
+    grid-row: 12;
+    padding-left: 30px
+}
+
+#machine{
+    height: 2rem;
+    width: 200px;
+}
+
+
+#time{
+    height: 2rem;
+    width: 200px;
+}
+.btn{
+    background: blue;
+    color: white;
+    font-weight: bold;
+    height: 2rem;
+    width: 200px;
+    border: none;
+    cursor:pointer;
+}
+
+
+
+.main-footer{
+    background: #990000;
+    grid-column: 1 / 12;
+    grid-row: 14;
+
+}
